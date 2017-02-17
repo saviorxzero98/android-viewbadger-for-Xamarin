@@ -278,6 +278,51 @@ namespace AndroidAdapter
 
         #region Show/Hide
 
+        public void SetVisibility(bool isVisibility)
+        {
+            if (isVisibility)
+            {
+                Show();
+            }
+            else
+            {
+                Hide();
+            }
+        }
+        public void SetVisibility(bool isVisibility, bool animate)
+        {
+            if (isVisibility)
+            {
+                Show(animate);
+            }
+            else
+            {
+                Hide(animate);
+            }
+        }
+        public void SetVisibility(bool isVisibility, Animation anim)
+        {
+            if (isVisibility)
+            {
+                Show(anim);
+            }
+            else
+            {
+                Hide(anim);
+            }
+        }
+        public void SetVisibility(bool isVisibility, bool animate, Animation anim)
+        {
+            if (isVisibility)
+            {
+                Show(animate);
+            }
+            else
+            {
+                Hide(anim);
+            }
+        }
+
         public void Show()
         {
             Show(false, null);
@@ -319,8 +364,9 @@ namespace AndroidAdapter
         }
         private void Hide(bool animate, Animation anim)
         {
-            (Parent as ViewGroup).GetChildAt(1).Visibility = ViewStates.Gone;
-            (Parent as ViewGroup).GetChildAt(1).Invalidate();
+            //(Parent as ViewGroup).GetChildAt(1).Visibility = ViewStates.Gone;
+            //(Parent as ViewGroup).GetChildAt(1).Invalidate();
+            (Parent as ViewGroup).Invalidate();
             Visibility = ViewStates.Gone;
             Invalidate();
             if (animate)
