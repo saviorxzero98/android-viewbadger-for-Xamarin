@@ -9,7 +9,7 @@
 # 使用範例 (Usage)
 
 1. 建立Badge View (Create Badge View)
-```CSharp
+```csharp
 View target = FindViewById(Resource.id.target_view);
 BadgeView badge = new BadgeView(this, target);
 badge.Text = "1";
@@ -17,14 +17,14 @@ badge.Show();
 ```
 
 2. 修改Badge View顯示位置 (Change Badge View Position)
-```CSharp
+```csharp
 badge.Hide();
 badge.Position = BadgeViewPosition.BottomRight;
 badge.Show();
 ```
 
 3. 移除Badge View (Remove Badge View)
-```CSharp
+```csharp
 badge.RemoveBadge();
 ```
 
