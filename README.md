@@ -32,4 +32,5 @@ badge.RemoveBadge();
 
 # 參考文件 (Reference)
 
-文件可參考 [連結1 (Xamarin)](https://github.com/danidomi/android-viewbadger-Xamarin)、[連結2 (Java Native)](https://github.com/jgilfelt/android-viewbadger)
+1. [android-viewbadger-Xamarin](https://github.com/danidomi/android-viewbadger-Xamarin)
+2. [android-viewbadger](https://github.com/jgilfelt/android-viewbadger)
