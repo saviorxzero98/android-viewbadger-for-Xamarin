@@ -16,11 +16,11 @@ namespace AndroidAdapter
     {
         TopLeft = 1,
         TopRight = 2,
-        ButtomLeft = 3,
-        ButtomRight = 4,
+        BottomLeft = 3,
+        BottomRight = 4,
         Center = 5,
         Top = 6,
-        Buttom = 7,
+        Bottom = 7,
         Left = 8,
         Right = 9
     }

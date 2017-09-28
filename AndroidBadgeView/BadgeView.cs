@@ -34,7 +34,6 @@ namespace AndroidAdapter
         {
             get
             {
-
                 int r = DipToPixels(BadgeViewDefaultValue.DEFAULT_CORNER_RADIUS_DIP);
                 float[] outerR = new float[] { r, r, r, r, r, r, r, r };
 
@@ -112,7 +111,6 @@ namespace AndroidAdapter
             _targetView = target;
             _targetTabIndex = tabIndex;
 
-            // Apply defaults
             Position = BadgeViewDefaultValue.DEFAULT_POSITION;
             HorizontalMargin = DipToPixels(BadgeViewDefaultValue.DEFAULT_MARGIN_DIP);
             VerticalMargin = HorizontalMargin;
@@ -239,7 +237,7 @@ namespace AndroidAdapter
         }
 
         /// <summary>
-        /// Remive Badge View
+        /// Remove Badge View
         /// </summary>
         public void RemoveBadge()
         {
@@ -457,11 +455,11 @@ namespace AndroidAdapter
                     lp.Gravity = GravityFlags.Right | GravityFlags.Top;
                     lp.SetMargins(0, VerticalMargin, HorizontalMargin, 0);
                     break;
-                case BadgeViewPosition.ButtomLeft:
+                case BadgeViewPosition.BottomLeft:
                     lp.Gravity = GravityFlags.Left | GravityFlags.Bottom;
                     lp.SetMargins(HorizontalMargin, 0, 0, VerticalMargin);
                     break;
-                case BadgeViewPosition.ButtomRight:
+                case BadgeViewPosition.BottomRight:
                     lp.Gravity = GravityFlags.Right | GravityFlags.Bottom;
                     lp.SetMargins(0, 0, HorizontalMargin, VerticalMargin);
                     break;
@@ -473,7 +471,7 @@ namespace AndroidAdapter
                     lp.Gravity = GravityFlags.Top | GravityFlags.CenterHorizontal;
                     lp.SetMargins(0, VerticalMargin, 0, 0);
                     break;
-                case BadgeViewPosition.Buttom:
+                case BadgeViewPosition.Bottom:
                     lp.Gravity = GravityFlags.Bottom | GravityFlags.CenterHorizontal;
                     lp.SetMargins(0, 0, 0, VerticalMargin);
                     break;
